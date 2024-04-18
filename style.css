@@ -17,7 +17,11 @@ button {
   font-size: 2rem;
 }
 button:hover {
-  background-color: rgba(65, 65, 65, 0.541);
+  background-color: rgb(109, 108, 108);
+  cursor: pointer;
+}
+button:active {
+  background-color: rgb(133, 133, 133);
 }
 input {
   border: white solid;
@@ -28,6 +32,8 @@ input {
   padding: 0;
   height: 80px;
   background-color: rgb(46, 46, 46);
+  font-size: 2rem;
+  text-align: right;
 }
 .Quadmerous button {
   width: 129.5px;
