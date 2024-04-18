@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="convertToFraction.js" defer></script>
     <title>Web-based Calculator</title>
   </head>
   <body>
@@ -45,7 +46,7 @@
             <button>ENG</button>
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
-            <button>S<->D</button>
+            <button onclick="convertToFraction()">S<->D</button>
             <button>M+</button>
           </div>
         </div>
