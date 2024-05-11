@@ -1,4 +1,9 @@
 const InputField = document.getElementById("InputField");
+while (True) {
+  if (InputField.value == "NaN") {
+    InputField.value = "";
+  }
+}
 function appendToDisplay(input) {
   if (InputField.value == "undefined") {
     InputField.value = "";
@@ -8,12 +13,18 @@ function appendToDisplay(input) {
   }
 }
 function Calculate() {
-  try {
-    PREANS = InputField.value;
-    InputField.value = eval(InputField.value);
-    ANS = InputField.value;
-  } catch (err) {
-    alert("Invalid Input");
+  if (InputField.value.includes("sin(")) {
+    // InputField.value.replace("sin(", "");
+    console.log(InputField.value.replace("sin(", ""));
+    // InputField.value = Math.sin(InputField.value - "sin(");
+  } else {
+    try {
+      PREANS = InputField.value;
+      InputField.value = eval(InputField.value);
+      ANS = InputField.value;
+    } catch (err) {
+      alert("Invalid Input");
+    }
   }
 }
 function Clear() {
@@ -25,7 +36,7 @@ function Backspace() {
 function showAnswer() {
   if (PREANS == "undefined" && ANS == "undefined") {
     alert(
-      "Both the ANS and PREANS are undefined, You cannot use any of them for now."
+      "Both the ANS and PREANS are undefined. You cannot use any of them for now."
     );
   } else if (ANS == "undefined") {
     ANS = PREANS;
