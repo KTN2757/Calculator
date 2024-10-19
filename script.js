@@ -12,7 +12,7 @@ function appendToDisplay(input) {
     InputField.value += input;
   }
 }
-function Calculate() {
+export function Calculate() {
   if (InputField.value.includes("sin(")) {
     // InputField.value.replace("sin(", "");
     console.log(InputField.value.replace("sin(", ""));
