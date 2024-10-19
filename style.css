@@ -6,6 +6,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 button {
   background-color: rgb(65, 65, 65);
   color: white;
@@ -16,13 +17,16 @@ button {
   margin: 1px;
   font-size: 2rem;
 }
+
 button:hover {
   background-color: rgb(109, 108, 108);
   cursor: pointer;
 }
+
 button:active {
   background-color: rgb(133, 133, 133);
 }
+
 input {
   border: white solid;
   border-top-left-radius: 8px;
@@ -35,12 +39,15 @@ input {
   font-size: 2rem;
   text-align: right;
 }
+
 .Quadmerous button {
   width: 129.5px;
 }
+
 .Calculator {
   width: 680px;
 }
+
 .Buttons {
   border: white solid;
   background-color: rgb(19, 18, 18);

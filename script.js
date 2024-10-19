@@ -36,7 +36,7 @@ function Backspace() {
 function showAnswer() {
   if (PREANS == "undefined" && ANS == "undefined") {
     alert(
-      "Both the ANS and PREANS are undefined. You cannot use any of them for now."
+      "Both the ANS and PREANS are undefined. You cannot use any of them for now.",
     );
   } else if (ANS == "undefined") {
     ANS = PREANS;

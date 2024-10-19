@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" value />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <script src="convertToFraction.js" defer></script>
-    <title>Web-based Calculator</title>
-  </head>
-  <body>
-    <div class="Calculator">
-      <div class="InputField">
-        <input readonly id="InputField" />
-      </div>
-    </div>
-    <div class="Calculator">
-      <div class="Buttons">
-        <div class="Pentamerous">
-          <div>
-            <button onclick="Calculate()">CALC</button>
-            <button>&#x222B;</button>
-            <button>SHIFT</button>
-            <button>foo</button>
-            <button>x&#8315;&#185;</button>
-            <button>log&#x2099;(x)</button>
-          </div>
-          <div>
-            <button>n/n</button>
-            <button>√</button>
-            <button>x²</button>
-            <button>xⁿ</button>
-            <button>log</button>
-            <button>ln</button>
-          </div>
-          <div>
-            <button onclick="appendToDisplay('(-)')">(-)</button>
-            <button>°′″</button>
-            <button>hyp</button>
-            <button onclick="appendToDisplay('sin(')">sin</button>
-            <button onclick="appendToDisplay('cos(')">cos</button>
-            <button onclick="appendToDisplay('tan(')">tan</button>
-          </div>
-          <div>
-            <button>RCL</button>
-            <button>ENG</button>
-            <button onclick="appendToDisplay('(')">(</button>
-            <button onclick="appendToDisplay(')')">)</button>
-            <button onclick="convertToFraction()">S<->D</button>
-            <button>M+</button>
-          </div>
-        </div>
-        <div class="Quadmerous">
-          <div>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="Backspace()">DEL</button>
-            <button onclick="Clear()">AC</button>
-          </div>
-          <div>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
 
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('/')">/</button>
-          </div>
-          <div>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('-')">-</button>
-          </div>
-          <div>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('*10')">*10</button>
-            <button onclick="showAnswer()">ANS</button>
-            <button onclick="Calculate()">=</button>
-          </div>
+<head>
+  <meta charset="UTF-8" value />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="convertToFraction.js" defer></script>
+  <title>Web-based Calculator</title>
+</head>
+
+<body>
+  <div class="Calculator">
+    <div class="InputField">
+      <input readonly id="InputField" />
+    </div>
+  </div>
+  <div class="Calculator">
+    <div class="Buttons">
+      <div class="Pentamerous">
+        <div>
+          <button onclick="Calculate()">CALC</button>
+          <button>&#x222B;</button>
+          <button>SHIFT</button>
+          <button>foo</button>
+          <button>x&#8315;&#185;</button>
+          <button>log&#x2099;(x)</button>
+        </div>
+        <div>
+          <button>n/n</button>
+          <button>√</button>
+          <button>x²</button>
+          <button>xⁿ</button>
+          <button>log</button>
+          <button>ln</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('(-)')">(-)</button>
+          <button>°′″</button>
+          <button>hyp</button>
+          <button onclick="appendToDisplay('sin(')">sin</button>
+          <button onclick="appendToDisplay('cos(')">cos</button>
+          <button onclick="appendToDisplay('tan(')">tan</button>
+        </div>
+        <div>
+          <button>RCL</button>
+          <button>ENG</button>
+          <button onclick="appendToDisplay('(')">(</button>
+          <button onclick="appendToDisplay(')')">)</button>
+          <button onclick="convertToFraction()">S<->D</button>
+          <button>M+</button>
+        </div>
+      </div>
+      <div class="Quadmerous">
+        <div>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="Backspace()">DEL</button>
+          <button onclick="Clear()">AC</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('*')">*</button>
+          <button onclick="appendToDisplay('/')">/</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="appendToDisplay('*10')">*10</button>
+          <button onclick="showAnswer()">ANS</button>
+          <button onclick="Calculate()">=</button>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
