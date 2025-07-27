@@ -1,23 +1,24 @@
 const InputField = document.getElementById("InputField");
-while (True) {
-  if (InputField.value == "NaN") {
-    InputField.value = "";
-  }
-}
 function appendToDisplay(input) {
   if (InputField.value == "undefined") {
     InputField.value = "";
     InputField.value += input;
   } else {
     InputField.value += input;
+    console.log(input)
   }
 }
-export function Calculate() {
+function Calculate() {
   if (InputField.value.includes("sin(")) {
     // InputField.value.replace("sin(", "");
     console.log(InputField.value.replace("sin(", ""));
     // InputField.value = Math.sin(InputField.value - "sin(");
-  } else {
+  }
+  else if (InputField.value.includes("*₁₀")) {
+    InputField.value.replace("*₁₀", "*10**");
+    Calculate();
+  }
+  else {
     try {
       PREANS = InputField.value;
       InputField.value = eval(InputField.value);

@@ -32,7 +32,7 @@ input {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: white;
-  width: 674px;
+  width: 705px;
   padding: 0;
   height: 80px;
   background-color: rgb(46, 46, 46);
@@ -45,7 +45,7 @@ input {
 }
 
 .Calculator {
-  width: 680px;
+  width: 710px;
 }
 
 .Buttons {
@@ -53,4 +53,8 @@ input {
   background-color: rgb(19, 18, 18);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+#log_base_n {
+  font-size: 26px;
 }

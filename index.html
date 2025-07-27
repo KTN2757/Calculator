@@ -5,8 +5,6 @@
   <meta charset="UTF-8" value />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <script src="convertToFraction.js" defer></script>
   <title>Web-based Calculator</title>
 </head>
 
@@ -25,7 +23,7 @@
           <button>SHIFT</button>
           <button>foo</button>
           <button>x&#8315;&#185;</button>
-          <button>log&#x2099;(x)</button>
+          <button id="log_base_n">log&#x2099;(x)</button>
         </div>
         <div>
           <button>n/n</button>
@@ -78,13 +76,15 @@
         <div>
           <button onclick="appendToDisplay('0')">0</button>
           <button onclick="appendToDisplay('.')">.</button>
-          <button onclick="appendToDisplay('*10')">*10</button>
+          <button onclick="appendToDisplay('*₁₀')">*10ˣ</button>
           <button onclick="showAnswer()">ANS</button>
           <button onclick="Calculate()">=</button>
         </div>
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="convertToFraction.js"></script>
 </body>
 
 </html>
