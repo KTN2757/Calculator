@@ -8,24 +8,25 @@ function appendToDisplay(input) {
     console.log(input)
   }
 }
+
 function Calculate() {
   if (InputField.value.includes("sin(")) {
     // InputField.value.replace("sin(", "");
     console.log(InputField.value.replace("sin(", ""));
     // InputField.value = Math.sin(InputField.value - "sin(");
   }
-  else if (InputField.value.includes("*₁₀")) {
-    InputField.value.replace("*₁₀", "*10**");
-    Calculate();
+  if (InputField.value.includes("*₁₀")) {
+    InputField.value = InputField.value.replace("*₁₀", "*10**");
   }
-  else {
-    try {
-      PREANS = InputField.value;
-      InputField.value = eval(InputField.value);
-      ANS = InputField.value;
-    } catch (err) {
-      alert("Invalid Input");
-    }
+  if (InputField.value.incldes("xⁿ")) {
+    InputField.value = InputField.value.replace("xⁿ", "**")
+  }
+  try {
+    PREANS = InputField.value;
+    InputField.value = eval(InputField.value);
+    ANS = InputField.value;
+  } catch (err) {
+    alert("Invalid Input");
   }
 }
 function Clear() {
